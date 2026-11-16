@@ -1,0 +1,5 @@
+﻿build/
+out/device/
+debug.keystore
+dist/*.idsig
+tools/patch-reader.ps1

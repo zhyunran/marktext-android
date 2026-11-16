@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>MarkText</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<header id="bar">
+  <div id="title" title="点按重命名">未打开文档</div>
+  <div id="actions">
+    <button data-act="save" class="primary">保存</button>
+    <button data-act="menu">⋯</button>
+  </div>
+</header>
+
+<div id="toolbar">
+  <button data-cmd="h1">H1</button>
+  <button data-cmd="h2">H2</button>
+  <button data-cmd="bold"><b>B</b></button>
+  <button data-cmd="italic"><i>I</i></button>
+  <button data-cmd="strike"><s>S</s></button>
+  <button data-cmd="inlineCode">`&lt;&gt;`</button>
+  <button data-cmd="quote">❝</button>
+  <button data-cmd="ul">• 列表</button>
+  <button data-cmd="ol">1. 列表</button>
+  <button data-cmd="task">☐ 任务</button>
+  <button data-cmd="codeBlock">代码块</button>
+  <button data-cmd="table">表格</button>
+  <button data-cmd="link">链接</button>
+  <button data-cmd="image">图片</button>
+  <button data-cmd="hr">分隔线</button>
+</div>
+
+<main id="scroll">
+  <article id="doc" class="markdown-body" contenteditable="true" spellcheck="false"
+           autocapitalize="sentences" autocomplete="off"
+           data-placeholder="在这里写……直接输入就是排版后的样子"></article>
+</main>
+
+<div id="scrim" hidden></div>
+<div id="sheet" hidden>
+  <div class="sheet-group">
+    <div class="sheet-title">文件</div>
+    <div class="sheet-grid">
+      <button data-act="open">打开</button>
+      <button data-act="save">保存</button>
+      <button data-act="saveAs">另存为</button>
+      <button data-act="share">分享</button>
+    </div>
+  </div>
+  <div class="sheet-group">
+    <div class="sheet-title">工具</div>
+    <div class="sheet-grid">
+      <button data-act="undo">撤销</button>
+      <button data-act="redo">重做</button>
+      <button data-act="print">存为 PDF</button>
+      <button data-act="source">看源码</button>
+    </div>
+  </div>
+  <div class="sheet-group">
+    <div class="sheet-title">外观</div>
+    <div class="sheet-grid">
+      <button data-act="theme">主题：深色</button>
+      <button data-act="font-dec">字号 A−</button>
+      <button data-act="font-inc">字号 A+</button>
+      <button data-act="default">设为默认</button>
+    </div>
+  </div>
+  <div id="stats" class="sheet-foot"></div>
+</div>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
