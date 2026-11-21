@@ -1,5 +1,6 @@
 # marktext-android
 
+**中文** · [<kbd>English</kbd>](README.en.md)
 MarkText 的 Android 版：所见即所得 Markdown 编辑器。单 APK，零第三方依赖（无 AndroidX / Gradle / npm）。
 
 与桌面版 MarkText 无代码关系：桌面版是 Electron + Muya，这里是重新实现的编辑器语义。
@@ -48,3 +49,8 @@ build.ps1                     手工构建 APK
 ## 许可
 
 本项目代码 MIT。编辑器依赖的 Android 平台组件遵循各自许可。
+
+
+---
+
+[<kbd>English version</kbd>](README.en.md)
